@@ -5,129 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to My First Webpage</title>
 
+  <link rel="stylesheet" href="style.css">
+
   <style>
-    body {
-      font-family: Georgia, serif;
-      background-color: #f5f0e8;
-      color: #1a1208;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav {
-      background-color: #ede8dc;
-      padding: 15px;
-      text-align: right;
-      border-bottom: 1px solid #b8a98a;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #8b3a1e;
-      margin-left: 15px;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #c47b2b;
-    }
-
     header {
       text-align: center;
-      padding: 50px 20px;
-    }
-
-    h1 {
-      font-size: 40px;
-      margin-bottom: 15px;
-    }
-
-    .intro {
-      max-width: 600px;
-      margin: auto;
-      line-height: 1.8;
-    }
-
-    .container {
-      width: 80%;
-      margin: auto;
-      display: flex;
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .card {
-      background-color: #ede8dc;
-      padding: 20px;
-      border: 1px solid #b8a98a;
-      flex: 1;
-    }
-
-    h2 {
-      color: #8b3a1e;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #8b3a1e;
-      color: white;
-      text-decoration: none;
-    }
-
-    .button:hover {
-      background-color: #c47b2b;
+      padding: 30px 20px 10px;
     }
   </style>
-</head>
 
+</head>
 <body>
 
-  <nav>
+  <nav class="fixed-nav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="feedback.html">Feedback</a>
   </nav>
 
-  <header>
-    <h1>Welcome to My First Webpage</h1>
+  <div class="main-content">
 
-    <p class="intro">
-      Hello! My name is <strong>Ashra Pote</strong>. I enjoy 
-      <em>technology, design, and storytelling</em>. 
-      This webpage shares some of my hobbies and favorite foods.
-    </p>
+    <div class="important-box">Important</div>
 
-    <a href="about.html" class="button">Read About Me</a>
-  </header>
-
-  
-  <div class="container">
-
+    <header>
     
-    <div class="card">
-      <h2>My Hobbies</h2>
+      <h1 id="main-heading">Welcome to My First Webpage</h1>
 
-      <ol>
-        <li><strong>Trekking</strong></li>
-        <li><u>Photography</u></li>
-        <li>Watching Movies</li>
-      </ol>
+      <p class="intro">
+        Hello! My name is <strong>Ashra Pote</strong>. I enjoy
+        <em>technology, design, and storytelling</em>.
+        This webpage shares some of my hobbies and favorite foods.
+      </p>
+
+      <a href="about.html" class="button" style="background-color: #5a1e0e;">Read About Me</a>
+    </header>
+
+    <div class="content-div">
+      <p class="highlight">
+        This website is my first web project. I am learning HTML and CSS as part of my BSIT course.
+        <span class="highlight-text">Feel free to explore!</span>
+      </p>
     </div>
 
-    <div class="card">
-      <h2>Favorite Foods</h2>
+    <div class="section-bg">
 
-      <ul>
-        <li>Momo</li>
-        <li><em>Pizza</em></li>
-        <li>Ramen</li>
-      </ul>
+      <h2 class="sticky-heading">My Hobbies</h2>
+
+      <p>I have been trekking in the hills around Kathmandu since I was young. It helps me stay active and enjoy nature.</p>
+      <p>Photography is another hobby I enjoy. I like capturing everyday moments and landscapes during my treks.</p>
+      <p>During my free time, I also enjoy watching movies. I prefer thriller and adventure genres.</p>
+      <p>Sometimes I also try to learn new things related to web development and technology in my spare time.</p>
+      <p>Reading about different cultures and places also interests me whenever I get the time to sit down with a good article.</p>
+
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h2>My Hobbies</h2>
+        <ol>
+          <li><strong>Trekking</strong></li>
+          <li><u>Photography</u></li>
+          <li>Watching Movies</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h2>Favorite Foods</h2>
+        <ul>
+          <li>Momo</li>
+          <li><em>Pizza</em></li>
+          <li>Ramen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="padding: 20px 0;">
+      <p>Nepal is a beautiful country with many trekking destinations such as Everest Base Camp and Annapurna Circuit.</p>
+      <p>Kathmandu is the capital city and is full of temples, culture, and history.</p>
+      <p>Technology is growing fast in Nepal and many students like me are choosing to study IT.</p>
+      <p>Web development is one of the most in-demand skills today and I hope to build useful websites in the future.</p>
     </div>
 
   </div>
